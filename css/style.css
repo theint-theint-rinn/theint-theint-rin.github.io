@@ -1,0 +1,223 @@
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../photo/ntt.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 0%;
+    padding-left: 8%;
+    position: -webkit-fixed;
+    position: fixed;
+    top: 1%;
+    padding-right: 1%;
+    background: rgb(12 11 11 / 30%);
+    width: 100%;
+    height: 75px;
+    background-position: center;
+}
+
+.logo{
+    color: tomato;
+    font-size: 45px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 30px 30px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: poppins;
+}
+nav ul li a:hover{
+    color: tomato;
+    transition: .4s;
+}
+.welcome{
+    color: white;
+    font-size: 30px;
+    padding-left: 8%;
+    padding-top: 8%;
+    margin-bottom: 0%;
+    font-family: courgette;
+}
+.discover{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    padding-left: 8%;
+    padding-right: 45%;
+    margin-top: 0em;
+    margin-bottom: 3%;
+    font-family: poppins;
+    background-image: url(../photo/neworangebg.png);
+    background-repeat: no-repeat;
+    background-position: 8% 50%;
+    background-size: 700px 500px;
+}
+.form1{
+    background: white;
+    width: 400px;
+    height: 40px;
+    display: flex;
+}
+.box{
+    padding-left: 8%;
+}
+.form1 input{
+flex: 1;
+border: none;
+outline: none;
+}
+.form1 button{
+    background: rgb(236, 77, 49);
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+form .fa-magnifying-glass{
+align-self: center;
+padding: 10px 20px;
+color: gray;
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: rgb(244, 233, 226);
+}
+.about-text{
+    width: 550px;
+    padding-left: 5%;
+}
+.main{
+    width: 1000px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.a{
+    color: rgb(236, 77, 49);
+    font-size: 50px;
+    font-family: courgette;
+    font-weight: bold;
+}
+.b{
+    font-size: 20px;
+    font-family: poppins;
+    font-weight: lighter;
+}
+.travel{
+    padding-top: 5%;
+    width: 100%;
+    height: 100vh;
+    
+}
+.place{
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.place img:hover{
+    transition: .4s;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.place p:hover{
+    color:rgb(236, 77, 49);
+    transition: .4s;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.photography{
+    width: 100%;
+    padding: 50px 0px;
+        background-color: rgb(244, 233, 226)}
+.images{
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 30%;
+    padding-right: 15%;
+}
+.images p {
+      font-size: 30px; 
+      font-family:poppins;
+      font-weight: bold;
+      padding-top: 12%;
+    }
+.images img {
+    width: 28%;  
+    box-shadow: 10px 10px 10px gray;
+}
+.images img:hover{
+    transition: .4s;
+    cursor: pointer;
+    transform: scale(1.145);
+}
+.images p:hover{
+    color:rgb(236, 77, 49);
+    transition: .4s;
+    cursor: pointer;
+    text-decoration: underline;    
+}
+.p1{
+    color:rgb(236, 77, 49);
+    font-family: poppins;
+    font-weight: bold;
+   
+    font-size: 20px;
+}
+.p2{
+    font-family: poppins;
+}
+.contact-box{
+    padding-top: 5%;
+    display: flex;
+    gap: 100px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.form2{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-family: poppins;
+}
+
+.contact-right{
+    width: 50%;
+    margin-right: 0%;
+    padding-top: 3%;
+}
+
+.contact-left{
+    margin-left: 18%;
+}
+.form2 button{
+    background: rgb(236, 77, 49);
+    border: none;
+    padding: 10px 9px;
+    margin: 5% 50% 0% 0%;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.place-details {
+  display: none;
+}

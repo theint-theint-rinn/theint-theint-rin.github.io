@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Rinn</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Josefin+Sans:wght@300&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/730f4db7a2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body style="overflow-x: hidden !important">
+    <nav class="navbar">
+      <img src="photo/phonto_5.png" style="width: 180px" alt="lo" />
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#travel">Travel</a></li>
+        <li><a href="#photography">Photography</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="home" class="hero">
+      <div class="content" style="padding-top: 10%">
+        <p class="welcome" style="padding-bottom: 2%">Welcome to Rinn!</p>
+        <p class="discover">Discover your favourite place in Japan with me.</p>
+        <div class="box">
+          <form class="form1">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              placeholder="What are you looking for?"
+              style="font-size: 17px"
+            />
+            <button type="submit" style="font-size: 17px">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <section id="about" class="about">
+      <div class="main">
+        <img
+          src="photo/torii.jpg"
+          style="width: 40%; border-radius: 5%; border: white solid 5px"
+          alt="torii"
+        />
+        <div class="about-text">
+          <p class="a">About</p>
+          <p class="b">
+            Hello! I'm Rinn. <br />
+            I've been living in Japan for years. Throughout those years, I've
+            experienced the unique and colorful Japanese culture and have fallen
+            in love with it multiple time over. In this little blog, I want to
+            share my individual experiences to you guys.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="travel" class="travel">
+      <div class="main1">
+        <p
+          style="
+            color: rgb(236, 77, 49);
+            font-size: 50px;
+            font-family: courgette;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 0%;
+          "
+        >
+          Travel
+        </p>
+        <p
+          style="
+            color: gray;
+            font-size: 25px;
+            font-family: poppins;
+            text-align: center;
+            margin-top: 0%;
+          "
+        >
+          - Select your destination -
+        </p>
+      </div>
+      <div class="place" style="text-align: center">
+        <div class="tokyo">
+          <img
+            src="photo/tokyo.jpg"
+            style="width: 80%; border-radius: 50%; border: gray double 5px"
+          />
+          <p style="font-size: 25px; font-family: poppins">
+            <button
+              style="all: unset"
+              type="button"
+              onclick="clickDetails('tokyo')"
+            >
+              Tokyo
+            </button>
+          </p>
+        </div>
+        <div class="hakone">
+          <img
+            src="photo/hakone.jpg"
+            style="width: 80%; border-radius: 50%; border: gray double 5px"
+          />
+          <p style="font-size: 25px; font-family: poppins">
+            <button
+              style="all: unset"
+              type="button"
+              onclick="clickDetails('hakone')"
+            >
+              Hakone
+            </button>
+          </p>
+        </div>
+        <div class="atami">
+          <img
+            src="photo/atami.jpg"
+            style="width: 80%; border-radius: 50%; border: gray double 5px"
+          />
+          <p style="font-size: 25px; font-family: poppins">
+            <button
+              style="all: unset"
+              type="button"
+              onclick="clickDetails('atami')"
+            >
+              Atami
+            </button>
+          </p>
+        </div>
+        <div class="kusatsu">
+          <img
+            src="photo/Kusatsu.jpg"
+            style="width: 80%; border-radius: 50%; border: gray double 5px"
+          />
+          <p style="font-size: 25px; font-family: poppins">
+            <button
+              style="all: unset"
+              type="button"
+              onclick="clickDetails('kusatsu')"
+            >
+              Kusatsu
+            </button>
+          </p>
+        </div>
+        <div class="karuizawa">
+          <img
+            src="photo/karuizawa.jpg"
+            style="width: 80%; border-radius: 50%; border: gray double 5px"
+          />
+          <p style="font-size: 25px; font-family: poppins">
+            <button
+              style="all: unset"
+              type="button"
+              onclick="clickDetails('karuizawa')"
+            >
+              Karuizawa
+            </button>
+          </p>
+        </div>
+      </div>
+      <div
+        class="place-details tokyo"
+        style="padding-left: 5%; padding-right: 5%"
+      >
+        <p style="font-family: poppins; font-size: 25px">Tokyo</p>
+        <p style="font-family: poppins; font-size: 20px">
+          Tokyo (東京, Tōkyō) is Japan's capital and the world's most populous
+          metropolis.Tokyo offers a seemingly unlimited choice of shopping,
+          entertainment, culture and dining to its visitors.
+        </p>
+      </div>
+      <div
+        class="place-details hakone"
+        style="padding-left: 5%; padding-right: 5%"
+      >
+        <p style="font-family: poppins; font-size: 25px">Hakone</p>
+        <p style="font-family: poppins; font-size: 20px">
+          Hakone (箱根) is part of the Fuji-Hakone-Izu National Park, less than
+          one hundred kilometers from Tokyo. Famous for hot springs, natural
+          beauty and the view across Lake Ashinoko of nearby Mount Fuji, Hakone
+          is one of the most popular destinations among Japanese and
+          international tourists looking for a break from Tokyo.
+        </p>
+      </div>
+      <div
+        class="place-details atami"
+        style="padding-left: 5%; padding-right: 5%"
+      >
+        <p style="font-family: poppins; font-size: 25px">Atami</p>
+        <p style="font-family: poppins; font-size: 20px">
+          Atami (熱海) lies at the northeastern base of the Izu Peninsula, less
+          than an hour west of Tokyo by shinkansen. Due to its proximity to
+          Tokyo, Atami has long been a popular seaside resort town with plenty
+          of hot springs and ryokan in addition to museums and other cultural
+          heritage sites.
+        </p>
+      </div>
+      <div
+        class="place-details kusatsu"
+        style="padding-left: 5%; padding-right: 5%"
+      >
+        <p style="font-family: poppins; font-size: 25px">Kusatsu</p>
+        <p style="font-family: poppins; font-size: 20px">
+          Kusatsu Onsen (草津温泉) is one of Japan's most famous hot spring
+          resorts and is blessed with large volumes of high quality hot spring
+          water said to cure every illness but lovesickness.
+        </p>
+      </div>
+      <div
+        class="place-details karuizawa"
+        style="padding-left: 5%; padding-right: 5%"
+      >
+        <p style="font-family: poppins; font-size: 25px">Karuizawa</p>
+        <p style="font-family: poppins; font-size: 20px">
+          Karuizawa (軽井沢) is an upmarket mountain resort at the foot of the
+          active volcano Mount Asama in Nagano Prefecture. Located at an
+          altitude of roughly 1000 meters, the town provides a pleasant escape
+          from the summer heat.
+        </p>
+      </div>
+    </section>
+    <section id="photography" class="photography">
+      <div class="main2">
+        <p
+          style="
+            color: rgb(236, 77, 49);
+            font-size: 50px;
+            font-family: courgette;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 0%;
+          "
+        >
+          Photography
+        </p>
+        <p
+          style="
+            color: gray;
+            font-size: 25px;
+            font-family: poppins;
+            text-align: center;
+            margin-top: 0%;
+          "
+        >
+          - Let's see Japan -
+        </p>
+      </div>
+      <div class="images">
+        <div class="shr" style="display: flex; gap: 5%; padding-bottom: 3%">
+          <img src="photo/shrine.jpg" alt="shrine" />
+          <p>Shrine</p>
+        </div>
+        <div class="food" style="display: flex; gap: 5%; padding-bottom: 3%">
+          <p>Food</p>
+          <img src="photo/bow.jpg" alt="bow" />
+        </div>
+        <div class="saku" style="display: flex; gap: 5%; padding-bottom: 3%">
+          <img src="photo/sakura.jpg" alt="sakura" />
+          <p>Sakura</p>
+        </div>
+        <div class="momi" style="display: flex; gap: 5%; padding-bottom: 3%">
+          <p>Autumn leaves</p>
+          <img src="photo/momiji.jpg" alt="momiji" />
+        </div>
+        <div class="ill" style="display: flex; gap: 5%; padding-bottom: 3%">
+          <img src="photo/illumination.jpg" alt="illumination" />
+          <p>Illumination</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="main3" style="padding-top: 4%">
+        <p
+          style="
+            color: rgb(236, 77, 49);
+            font-size: 50px;
+            font-family: courgette;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 0%;
+          "
+        >
+          Contact
+        </p>
+        <p
+          style="
+            color: gray;
+            font-size: 25px;
+            font-family: poppins;
+            text-align: center;
+            margin-top: 0%;
+          "
+        >
+          - Have a question? -
+        </p>
+        <div
+          class="con"
+          style="
+            display: flex;
+            justify-content: space-between;
+            padding-left: 8%;
+            padding-right: 8%;
+            padding-top: 3%;
+          "
+        >
+          <div style="text-align: center">
+            <i class="fas fa-map-marker-alt fa-2xl"></i>
+            <p class="p1" style="padding-top: 8%">Address</p>
+            <p class="p2">Chiba,Ichikawa,Minato5-2</p>
+          </div>
+          <div style="text-align: center">
+            <i class="fas fa-phone fa-2xl"></i>
+            <p class="p1" style="padding-top: 10%">Contact Number</p>
+            <p class="p2">070-8131-9232</p>
+          </div>
+          <div style="text-align: center">
+            <i class="fas fa-paper-plane fa-2xl"></i>
+            <p class="p1" style="padding-top: 8%">Email</p>
+            <p class="p2">theinttheintrinn@gmail.com</p>
+          </div>
+          <div style="text-align: center">
+            <i class="fas fa-globe-africa fa-2xl"></i>
+            <p class="p1" style="padding-top: 18%">Website</p>
+            <p class="p2">Rinn.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-box">
+      <div class="contact-left">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.6721259891087!2d139.90866666497467!3d35.68507443736915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018876c0bcc2909%3A0xd8ebf902ec6115f!2sMinato%2C%20Ichikawa%2C%20Chiba%20272-0131!5e0!3m2!1sen!2sjp!4v1664546976040!5m2!1sen!2sjp"
+          width="450"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="contact-right">
+        <form class="form2">
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            style="
+              border: 1px solid rgb(236, 77, 49);
+              border-radius: 5px;
+              height: 25px;
+            "
+          />
+
+          <label for="email">Your Email</label>
+          <input
+            type="text"
+            style="
+              border: 1px solid rgb(236, 77, 49);
+              border-radius: 5px;
+              height: 25px;
+            "
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            style="border: 1px solid rgb(236, 77, 49); border-radius: 5px"
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <section>
+      <div
+        style="
+          font-family: poppins;
+          text-align: center;
+          margin-top: 5%;
+          padding: 10px;
+          background-color: rgb(244, 233, 226);
+        "
+      >
+        <p>Copyright © Rinn All rights reserved</p>
+      </div>
+    </section>
+  </body>
+</html>
